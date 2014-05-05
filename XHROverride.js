@@ -28,7 +28,7 @@
 		["#xhrStatusContainer {",
 			"top: 10%;",
 			"right: 0;",
-			"width: 10px;",
+			"width: 20px;",
 			"position: fixed;",
 			"height: 50%;",
 			"overflow-y: auto;",
