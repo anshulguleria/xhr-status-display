@@ -119,7 +119,10 @@
 			return returnValue;
 		}
 	})(baseObject);
-	NewXMLHttpObject.prototype = Object.create(baseObject.prototype);
+	//Object.create creates a new object using the first argument as prototype.
+	//this is not working properly because we do not need to create a new object
+	//having __proto__ link, but the same object with the prototype.
+	NewXMLHttpObject.prototype = Object.create(baseObject.prototype);	//new baseObject, is also not working properly.
 	NewXMLHttpObject.prototype.constructor = NewXMLHttpObject;
 	//overriding complete.
 	
