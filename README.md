@@ -1,5 +1,6 @@
 xhr-status-display
 ==================
 
-Displays the status of xhr requests on your page.
-Implemented as bookmarklet.
+##Description
+* Displays the status of xhr requests on your page. By overriding the `XMLHttpRequest` global object.
+* Implemented as bookmarklet.
