@@ -28,7 +28,7 @@
 		["#xhrStatusContainer {",
 			"top: 10%;",
 			"right: 0;",
-			"left: 70%;",
+			"width: 10px;",
 			"position: fixed;",
 			"height: 50%;",
 			"overflow-y: auto;",
@@ -42,8 +42,9 @@
 			"margin-right: none;",
 			"background: rgba(255, 255, 255, 0.75);",
 		"}",
-		"#xhrStatusContainer .xhrstatus:hover {",
-			"visibility: hidden;",
+		"#xhrStatusContainer:hover {",
+			"width: initial;",
+			"min-width: 30px;",
 		"}"].join('\n');
 
 		document.head.appendChild(styleTag);
