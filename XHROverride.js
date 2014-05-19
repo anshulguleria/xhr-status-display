@@ -25,27 +25,27 @@
 	var setupCss = function () {
 		var styleTag = document.createElement('style');
 		styleTag.textContent = 	
-		["#xhrStatusContainer {",
-			"top: 10%;",
-			"right: 0;",
-			"width: 20px;",
-			"position: fixed;",
-			"height: 50%;",
-			"overflow-y: auto;",
-			"z-index: 99999;",
-		"}",
-		"#xhrStatusContainer .xhrstatus {",
-			"line-height: 1.3em;",
-			"border: solid thin red;",
-			"border-right: none;",
-			"margin: 2px;",
-			"margin-right: none;",
-			"background: rgba(255, 255, 255, 0.75);",
-		"}",
-		"#xhrStatusContainer:hover {",
-			"width: initial;",
-			"min-width: 30px;",
-		"}"].join('\n');
+			["#xhrStatusContainer {",
+				"top: 10%;",
+				"right: 0;",
+				"width: 20px;",
+				"position: fixed;",
+				"height: 50%;",
+				"overflow-y: auto;",
+				"z-index: 99999;",
+			"}",
+			"#xhrStatusContainer .xhrstatus {",
+				"line-height: 1.3em;",
+				"border: solid thin red;",
+				"border-right: none;",
+				"margin: 2px;",
+				"margin-right: none;",
+				"background: rgba(255, 255, 255, 0.75);",
+			"}",
+			"#xhrStatusContainer:hover {",
+				"width: initial;",
+				"min-width: 30px;",
+			"}"].join('\n');
 
 		document.head.appendChild(styleTag);
 	}();
