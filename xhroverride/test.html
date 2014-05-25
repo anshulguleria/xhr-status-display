@@ -7,11 +7,21 @@
 </head>
 <body>
 	<div> <button id='xhr-init' type='button'>Make xhr</button></div>
-	<script type="text/javascript" src='http://code.jquery.com/jquery-1.11.1.min.js'></script>
+	<script type="text/javascript" src="../modules/truecopy.js"></script>
+	<script type="text/javascript" src="../modules/constructor-override.js"></script>
+	<script type="text/javascript">
+		//starting override
+		console.log('overriding initiated');
+		window.XMLHttpRequest = function (XMLHttpRequest) {
+			return XHROGlobal.injectInConstructor(XMLHttpRequest, null, function () {
+				console.log('injected afterFunction called');
+			});
+		}(XMLHttpRequest);
+		console.log('overriding complete');
+	</script>
+	<script type="text/javascript" src='jquery-1.11.1.js'></script>
 
 	<script type="text/javascript" src='test.js'></script>
-	
-	<script type="text/javascript" src='../XHROverride.js'></script>
 
 </body>
 </html>

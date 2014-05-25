@@ -24,7 +24,7 @@
 	 */
 	var setupCss = function () {
 		var styleTag = document.createElement('style');
-		styleTag.textContent = 	
+		styleTag.textContent =
 			["#xhrStatusContainer {",
 				"top: 10%;",
 				"right: 0;",
@@ -70,7 +70,7 @@
 		//ISSUE: XMLHttpRequest object is changed here thus UNSENT, OPENED, etc are not available
 		//directely which should not happen. Fix it.!!!
 		if (readyState === XMLHttpRequest.prototype.UNSENT) {	//i.e. 0
-			element.textContent = "Unsent";	
+			element.textContent = "Unsent";
 		} else if(readyState === XMLHttpRequest.prototype.OPENED) {	//i.e. 1
 			element.textContent = "Opened";
 		} else if(readyState === XMLHttpRequest.prototype.LOADING) {	//i.e. 2

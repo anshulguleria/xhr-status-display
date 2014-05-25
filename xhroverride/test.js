@@ -1,7 +1,10 @@
 $(document).ready(function () {
+
+	
+
 	$('#xhr-init').on('click', function () {
 		$.ajax({
-			url: 'test.json',
+			url: 'test.txt',
 			contentType: 'application/javascript',
 			success: function(response){
 				console.log('xhr success');
